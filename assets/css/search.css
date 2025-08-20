@@ -1,0 +1,87 @@
+/* Layout */
+.search-page {
+  max-width: 72rem; /* ~1152px */
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.search-page .search-intro {
+  margin: 0.5rem 0 1rem;
+  color: #5a5d61; /* USWDS gray-50-ish */
+  font-size: 0.95rem;
+}
+
+/* Result list */
+#results {
+  margin-top: 1rem;
+}
+#results article {
+  border: 1px solid #e6e6e6;
+  border-radius: 0.5rem; /* 8px */
+  padding: 1rem 1rem 0.875rem;
+  margin: 0 0 1rem;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+  transition: box-shadow 120ms ease, border-color 120ms ease, transform 60ms ease;
+}
+#results article:hover {
+  border-color: #dcdcdc;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
+#results h2 {
+  font-size: 1.125rem;
+  line-height: 1.25;
+  margin: 0 0 0.25rem;
+}
+#results p {
+  margin: 0.25rem 0 0.25rem;
+}
+#results .result-url,
+#results p.text-small,
+#results p.text-italic {
+  color: #6b6e73; /* gray-60-ish */
+  font-size: 0.875rem;
+}
+#results .result-url {
+  overflow-wrap: anywhere;
+}
+
+/* Highlight */
+mark {
+  background: #fff2a8; /* soft yellow */
+  padding: 0 .15em;
+  border-radius: .2em;
+}
+
+/* Empty/notice states */
+.notice {
+  border: 1px dashed #b6b6b6;
+  background: #fafafa;
+  color: #4d4f53;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  margin-top: 1rem;
+  font-size: .95rem;
+}
+
+/* Make the search box feel integrated */
+.usa-search--small {
+  max-width: 30rem;
+}
+.usa-search--small .usa-input {
+  border-radius: .375rem 0 0 .375rem;
+}
+.usa-search--small .usa-button {
+  border-radius: 0 .375rem .375rem 0;
+}
+
+/* Respect user dark mode (basic) */
+@media (prefers-color-scheme: dark) {
+  body { background: #0b0c0d; color: #e6e6e6; }
+  #results article { background: #141516; border-color: #2a2c2e; }
+  #results article:hover { border-color: #3a3c3f; box-shadow: 0 3px 12px rgba(0,0,0,0.4); }
+  #results .result-url,
+  #results p.text-small,
+  #results p.text-italic { color: #b9bdc1; }
+  .notice { background: #121314; border-color: #3a3c3f; color: #cfd3d7; }
+  mark { background: #3a2f00; }
+}

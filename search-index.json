@@ -1,0 +1,44 @@
+[
+    {
+    "url": "/index.html",
+    "title": "Home",
+    "description": "Digital accessibility protection & education.",
+    "content": "DAPEN helps small businesses understand ADA website risk..."
+  },
+  {
+    "url": "/blogs/digital-accessibility-101/",
+    "title": "Digital Accessibility 101",
+    "description": "An introduction to digital accessibility and why it matters for small businesses.",
+    "content": "Digital accessibility ensures that websites and apps can be used by people with disabilities. Learn the basics of WCAG standards and ADA compliance..."
+  },
+  {
+    "url": "/blogs/legal-risks/",
+    "title": "Legal Risks of ADA Website Non-Compliance",
+    "description": "Understanding the risks of ADA demand letters and lawsuits.",
+    "content": "Law firms are sending thousands of ADA demand letters to small businesses each year. Non-compliant websites face costly lawsuits and settlements..."
+  },
+  {
+    "url": "/blogs/tool-limitations/",
+    "title": "Limitations of Accessibility Tools",
+    "description": "Why plugins and overlays don’t fully protect you from ADA lawsuits.",
+    "content": "Many accessibility plugins claim to make websites compliant, but they often leave gaps. Learn the risks of relying on overlays and automated fixes..."
+  },
+  {
+    "url": "/blogs/lawsuits-settlements/",
+    "title": "ADA Lawsuits & Settlements",
+    "description": "Case studies of accessibility lawsuits and what businesses paid to settle.",
+    "content": "From restaurants to e-commerce stores, many small businesses have faced ADA lawsuits. This article explores real-world settlements and legal outcomes..."
+  },
+  {
+    "url": "/blogs/dapen-defense-fund/",
+    "title": "DAPEN® Defense Fund",
+    "description": "How the DAPEN Defense Fund helps protect businesses targeted by ADA lawsuits.",
+    "content": "The DAPEN Defense Fund connects you with ADA attorneys and accessibility developers to respond to demand letters and reduce your risk..."
+  },
+  {
+    "url": "/protect/",
+    "title": "Get Protected",
+    "description": "Learn how to protect your business from ADA website lawsuits.",
+    "content": "DAPEN offers affordable protection plans that include legal support and accessibility fixes if your business receives a demand letter..."
+  }
+]

@@ -1,0 +1,80 @@
+  <div class="usa-identifier">
+    <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Site identifier">
+      <div class="usa-identifier__container">
+        <div class="usa-identifier__logos">
+          <a href="https://dapendefense.org/" class="usa-identifier__logo" onclick="return navigate(this)">
+            <img class="usa-identifier__logo-img" alt="DAPEN Logo" src="/assets/images/dapen-footer.jpg" />
+          </a>
+        </div>
+        <div class="usa-identifier__identity">
+          <p class="usa-identifier__identity-domain">DAPEN.org</p>
+          <p class="usa-identifier__identity-disclaimer">
+            A website by the
+            <a href="https://dapendefense.org/" onclick="return navigate(this)">Digital Accessibility Protection &amp; Education Network</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+<nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+  <div class="usa-identifier__container">
+    <ul class="usa-identifier__required-links-list">
+      <li class="usa-identifier__required-links-item">
+        <a href="/protect/" class="usa-identifier__required-link usa-link" onclick="return navigate(this)">Get Protected</a>
+      </li>
+      <li class="usa-identifier__required-links-item">
+        <a href="/about-us/" class="usa-identifier__required-link usa-link" onclick="return navigate(this)">About DAPEN</a>
+      </li>
+      <li class="usa-identifier__required-links-item">
+        <a href="/contact/" class="usa-identifier__required-link usa-link" onclick="return navigate(this)">Contact Us</a>
+      </li>
+      <li class="usa-identifier__required-links-item">
+        <a href="/legal-policies/accessibility-statement/" class="usa-identifier__required-link usa-link" onclick="return navigate(this)">Accessibility Statement</a>
+      </li>
+      <li class="usa-identifier__required-links-item">
+        <a href="/legal-policies/terms-of-service/" class="usa-identifier__required-link usa-link" onclick="return navigate(this)">Terms of Service</a>
+      </li>
+      <li class="usa-identifier__required-links-item">
+        <a href="/legal-policies/privacy-policy/" class="usa-identifier__required-link usa-link" onclick="return navigate(this)">Privacy Policy</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  .usa-identifier__required-links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: 1024px) {
+    .usa-identifier__required-links-list {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(2, auto);
+      gap: 0.75rem 2rem; /* row gap / column gap */
+    }
+
+    .usa-identifier__required-links-list li:nth-child(1) { grid-column: 1; grid-row: 1; }
+    .usa-identifier__required-links-list li:nth-child(2) { grid-column: 2; grid-row: 1; }
+    .usa-identifier__required-links-list li:nth-child(3) { grid-column: 3; grid-row: 1; }
+
+    .usa-identifier__required-links-list li:nth-child(4) { grid-column: 1; grid-row: 2; }
+    .usa-identifier__required-links-list li:nth-child(5) { grid-column: 2; grid-row: 2; }
+    .usa-identifier__required-links-list li:nth-child(6) { grid-column: 3; grid-row: 2; }
+  }
+</style>
+
+    <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="Additional information">
+      <div class="usa-identifier__container">
+        <div class="usa-identifier__usagov-description">
+          Over 250,000 small businesses face ADA demand letters every year.
+        </div>
+        <a href="/protect/" class="usa-link" onclick="return navigate(this)">Register with the DAPEN® Defense Fund</a>
+      </div>
+    </section>
+  </div>

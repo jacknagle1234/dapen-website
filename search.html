@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index, follow" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Search | DAPEN.org</title>
+  <meta property="og:title" content="Search | DAPEN.org" />
+  <meta name="description" content="Search DAPEN.org for digital accessibility guidance, legal risks, and protection resources." />
+  <meta property="og:description" content="Search DAPEN.org for digital accessibility guidance, legal risks, and protection resources." />
+  <meta property="og:image" content="assets/images/social-media-og-image.jpg" />
+  <meta name="twitter:image" content="assets/images/social-media-og-image.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Search | DAPEN.org" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="search.html" />
+  <meta property="og:url" content="search.html" />
+
+  <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
+  <link rel="manifest" href="assets/images/site.webmanifest" />
+
+  <!-- Match your working page CSS exactly -->
+  <link rel="stylesheet" type="text/css" href="assets/css/index6737.css?1753365385119170858" />
+
+  <!-- jQuery + USWDS init exactly as on working page -->
+  <script src="../code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="assets/js/uswds-init.min6737.js?1753365385119170858"></script>
+
+  <!-- (Optional) search-page-specific styles; safe to include after your main CSS -->
+  <link rel="stylesheet" href="assets/css/search.css" />
+
+  <meta name="topic" content="" />
+  <meta name="sub-topic" content="" />
+  <meta name="audience" content="" />
+  <meta name="resource-type" content="" />
+  <meta name="format" content="" />
+</head>
+
+<body class="page-landing-page layout-demo">
+  <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+  <!-- Header (same loader as your working page) -->
+  <div id="site-header"></div>
+  <script>
+    fetch('/partials/header/')
+      .then(res => res.text())
+      .then(html => document.getElementById('site-header').innerHTML = html);
+  </script>
+
+  <main id="main-content">
+    <h1 class="usa-sr-only">Search DAPEN.org</h1>
+
+    <!-- Keep search inside the same grid width as other pages -->
+    <section class="usa-section">
+      <div class="grid-container">
+        <!-- Search form -->
+        <form id="search_form" class="usa-search usa-search--small" action="/search.html" accept-charset="UTF-8" method="get">
+          <div role="search">
+            <label class="usa-sr-only" for="extended-search-field-small">Search</label>
+            <input class="usa-input" id="extended-search-field-small" type="search" name="q" autocomplete="off" placeholder="Search the site…" />
+            <button class="usa-button primary-background-color" type="submit" aria-label="Search">
+              <img src="/assets/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+            </button>
+          </div>
+        </form>
+
+        <!-- Results area (styled by assets/css/search.css) -->
+        <section class="search-page usa-prose" aria-live="polite" aria-busy="false">
+          <h2 class="usa-sr-only">Search Results</h2>
+          <p id="search-query" class="search-intro">Type a term above and press Enter.</p>
+          <div id="results"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (same loader as your working page) -->
+  <div id="site-footer"></div>
+  <script>
+    fetch('/partials/footer/index.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('site-footer').innerHTML = html);
+  </script>
+
+  <!-- Match your working page JS includes + order -->
+  <script src="assets/js/uswds.min6737.js?1753365385119170858"></script>
+  <script src="assets/js/app6737.js?1753365385119170858"></script>
+
+  <!-- Alert dismiss, identical behavior -->
+  <script>
+    $(document).ready(function(){
+      if (window.localStorage.getItem('dismiss_alert')) {
+        $('#alert_banner').hide();
+      }
+      $("#dismiss_alert").click(function(){
+        window.localStorage.setItem('dismiss_alert', true);
+        $('#alert_banner').hide();
+      });
+    });
+  </script>
+
+  <!-- Your search logic (from earlier) -->
+  <script src="/assets/js/search.js" defer></script>
+</body>
+</html>
