@@ -42,12 +42,63 @@
 <body class="page-landing-page layout-demo">
   <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 
-  <div id="site-header"></div>
-<script>
-  fetch('/partials/header/')
-    .then(res => res.text())
-    .then(html => document.getElementById('site-header').innerHTML = html);
-</script>
+<section aria-label="Official Website Banner">
+    <div class="usa-banner" aria-label="Official website of DAPEN">
+      <div class="usa-accordion">
+        <header class="usa-banner__header">
+          <div class="usa-banner__inner">
+            <div class="grid-col-auto">
+              <img aria-hidden="true" class="usa-banner__header-flag" src="/assets/img/dapen-wheelchair-icon.png" alt="DAPEN icon" />
+            </div>
+            <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+              <p class="usa-banner__header-text">
+                An official website of DAPEN® (Digital Accessibility Protection &amp; Education Network)
+              </p>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+  </section>
+
+<header class="usa-header usa-header--extended" role="banner">
+  <div class="usa-navbar">
+    <div class="usa-logo" id="extended-logo">
+      <span><a href="/index.html" onclick="return navigate(this)">
+        <img src="/assets/images/dapen-logo-3.png" alt="DAPEN.org Home" class="logo" />
+      </a></span>
+    </div>
+    <button class="usa-menu-btn">Menu</button>
+  </div>
+  <nav id="site-nav" role="navigation" class="usa-nav" aria-label="Primary Site Navigation">
+    <div class="usa-nav__inner">
+      <button class="usa-nav__close"><img alt="close" src="/assets/img/close.svg"></button>
+      <ul class="usa-nav__primary usa-accordion">
+        <li class="usa-nav__primary-item"><a class="usa-nav__link" onclick="return navigate(this)" href="/blogs/digital-accessibility-101/"><span>Digital Accessibility 101</span></a></li>
+        <li class="usa-nav__primary-item"><a class="usa-nav__link" onclick="return navigate(this)" href="/blogs/legal-risks/"><span>Legal Risks</span></a></li>
+        <li class="usa-nav__primary-item"><a class="usa-nav__link" onclick="return navigate(this)" href="/blogs/tool-limitations/"><span>Tool Limitations</span></a></li>
+        <li class="usa-nav__primary-item"><a class="usa-nav__link" onclick="return navigate(this)" href="/blogs/lawsuits-settlements/"><span>Lawsuits &amp; Settlements</span></a></li>
+        <li class="usa-nav__primary-item"><a class="usa-nav__link" onclick="return navigate(this)" href="/blogs/dapen-defense-fund/"><span>DAPEN® Defense Fund</span></a></li>
+        <li class="usa-nav__primary-item"><a class="usa-nav__link" onclick="return navigate(this)" href="/protect/"><span>Get Protected</span></a></li>
+      </ul>
+      <div class="usa-nav__secondary">
+        <ul class="usa-nav__secondary-links">
+          <li class="usa-nav__secondary-item"><a href="/protect/" class="external-link" onclick="return navigate(this)">Get Protected</a></li>
+          <li class="usa-nav__secondary-item"><a href="/about-us/index.html" class="external-link" onclick="return navigate(this)">About Us</a></li>
+        </ul>
+        <form id="search_form" class="usa-search usa-search--small" action="/search.html" accept-charset="UTF-8" method="get">
+          <div role="search">
+            <label class="usa-sr-only" for="extended-search-field-small">Search</label>
+            <input class="usa-input" id="extended-search-field-small" type="search" name="q" autocomplete="off" />
+            <button class="usa-button primary-background-color" type="submit">
+              <img src="/assets/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
 
   <main id="main-content">
     <h1 class="usa-sr-only">DAPEN — Digital Accessibility Protection & Education Network</h1>
