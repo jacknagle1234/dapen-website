@@ -9,19 +9,8 @@
   <meta name="description" content="Contact DAPEN for support, questions about the DAPEN® Defense Fund, partnerships, or media inquiries." />
   <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="Contact DAPEN" />
-  <meta property="og:description" content="Get in touch with DAPEN for support, Defense Fund questions, partnerships, or media." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://dapen.org/contact/" />
-  <meta property="og:image" content="https://dapen.org/assets/images/social-media-og-image.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://dapen.org/assets/images/social-media-og-image.jpg" />
-
-  <!-- Canonical -->
   <link rel="canonical" href="https://dapen.org/contact/" />
 
-  <!-- Favicons / manifest -->
   <link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
@@ -29,25 +18,17 @@
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/android-chrome-192x192.png" />
   <link rel="manifest" href="/assets/images/site.webmanifest" />
 
-  <!-- Your site CSS + USWDS init -->
   <link rel="stylesheet" type="text/css" href="/assets/css/index6737.css?1753365385119170858" />
   <script src="/assets/js/uswds-init.min6737.js?1753365385119170858"></script>
 
   <style>
-    .contact-card {
-      background: #fff;
-      border: 2px solid var(--usa-base-lighter, #e5e7eb);
-      border-radius: 0.75rem;
-      padding: 1.5rem;
-    }
     .form-wrapper {
-      margin-top: 1.5rem;
-    }
-    .form-embed {
-      display: block;
-      width: 100%;
-      height: 1100px; /* adjust as needed */
-      border: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem auto;
+      max-width: 100%;
+      overflow-x: auto; /* just in case on small screens */
     }
   </style>
 </head>
@@ -55,8 +36,7 @@
 <body class="page-landing-page layout-demo">
   <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 
-  <!-- Banner -->
-  <section aria-label="Official Website Banner">
+ <section aria-label="Official Website Banner">
     <div class="usa-banner" aria-label="Official website of DAPEN">
       <div class="usa-accordion">
         <header class="usa-banner__header">
@@ -75,83 +55,71 @@
     </div>
   </section>
 
-  <!-- Header / Nav -->
-  <header class="usa-header usa-header--extended" role="banner">
-    <div class="usa-navbar">
-      <div class="usa-logo" id="extended-logo">
-        <span><a href="/" aria-label="DAPEN Home">
-          <img src="/assets/images/dapen-logo-3.png" alt="DAPEN.org Home" class="logo" />
-        </a></span>
-      </div>
-      <button class="usa-menu-btn">Menu</button>
+<header class="usa-header usa-header--extended" role="banner">
+  <div class="usa-navbar">
+    <div class="usa-logo" id="extended-logo">
+      <span><a href="/" onclick="return navigate(this)">
+        <img src="/assets/images/dapen-logo-3.png" alt="DAPEN.org Home" class="logo" />
+      </a></span>
     </div>
-    <nav id="site-nav" role="navigation" class="usa-nav" aria-label="Primary Site Navigation">
-      <div class="usa-nav__inner">
-        <button class="usa-nav__close"><img alt="close" src="/assets/img/close.svg"></button>
-        <ul class="usa-nav__primary usa-accordion">
-          <li class="usa-nav__primary-item"><a class="usa-nav__link" href="/blogs/digital-accessibility-101/">Digital Accessibility 101</a></li>
-          <li class="usa-nav__primary-item"><a class="usa-nav__link" href="/blogs/legal-risks/">Legal Risks</a></li>
-          <li class="usa-nav__primary-item"><a class="usa-nav__link" href="/blogs/tool-limitations/">Tool Limitations</a></li>
-          <li class="usa-nav__primary-item"><a class="usa-nav__link" href="/blogs/lawsuits-settlements/">Lawsuits & Settlements</a></li>
-          <li class="usa-nav__primary-item"><a class="usa-nav__link" href="/blogs/dapen-defense-fund/">DAPEN® Defense Fund</a></li>
-          <li class="usa-nav__primary-item"><a class="usa-nav__link" href="/protect/">Get Protected</a></li>
+    <button class="usa-menu-btn">Menu</button>
+  </div>
+  <nav id="site-nav" role="navigation" class="usa-nav" aria-label="Primary Site Navigation">
+    <div class="usa-nav__inner">
+      <button class="usa-nav__close"><img alt="close" src="/assets/img/close.svg"></button>
+      <ul class="usa-nav__primary usa-accordion">
+        <li class="usa-nav__primary-item"><a class="usa-nav__link" onclick="return navigate(this)" href="/blogs/digital-accessibility-101/"><span>Digital Accessibility 101</span></a></li>
+        <li class="usa-nav__primary-item"><a class="usa-nav__link" onclick="return navigate(this)" href="/blogs/legal-risks/"><span>Legal Risks</span></a></li>
+        <li class="usa-nav__primary-item"><a class="usa-nav__link" onclick="return navigate(this)" href="/blogs/tool-limitations/"><span>Tool Limitations</span></a></li>
+        <li class="usa-nav__primary-item"><a class="usa-nav__link" onclick="return navigate(this)" href="/blogs/lawsuits-settlements/"><span>Lawsuits &amp; Settlements</span></a></li>
+        <li class="usa-nav__primary-item"><a class="usa-nav__link" onclick="return navigate(this)" href="/blogs/dapen-defense-fund/"><span>DAPEN® Defense Fund</span></a></li>
+        <li class="usa-nav__primary-item"><a class="usa-nav__link" onclick="return navigate(this)" href="/protect/"><span>Get Protected</span></a></li>
+      </ul>
+      <div class="usa-nav__secondary">
+        <ul class="usa-nav__secondary-links">
+          <li class="usa-nav__secondary-item"><a href="/protect/" class="external-link" onclick="return navigate(this)">Get Protected</a></li>
+          <li class="usa-nav__secondary-item"><a href="/about-us/" class="external-link" onclick="return navigate(this)">About Us</a></li>
         </ul>
-        <div class="usa-nav__secondary">
-          <ul class="usa-nav__secondary-links">
-            <li class="usa-nav__secondary-item"><a href="/protect/" class="external-link">Get Protected</a></li>
-            <li class="usa-nav__secondary-item"><a href="/about-us/" class="external-link">About Us</a></li>
-          </ul>
-          <form id="search_form" class="usa-search usa-search--small" action="/search.html" method="get">
-            <div role="search">
-              <label class="usa-sr-only" for="extended-search-field-small">Search</label>
-              <input class="usa-input" id="extended-search-field-small" type="search" name="q" autocomplete="off" />
-              <button class="usa-button primary-background-color" type="submit">
-                <img src="/assets/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
-              </button>
-            </div>
-          </form>
-        </div>
+        <form id="search_form" class="usa-search usa-search--small" action="/search.html" accept-charset="UTF-8" method="get">
+          <div role="search">
+            <label class="usa-sr-only" for="extended-search-field-small">Search</label>
+            <input class="usa-input" id="extended-search-field-small" type="search" name="q" autocomplete="off" />
+            <button class="usa-button primary-background-color" type="submit">
+              <img src="/assets/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+            </button>
+          </div>
+        </form>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
 
-  <main id="main-content" role="main">
+  <main id="main-content">
     <section class="usa-section">
       <div class="grid-container">
-        <div class="usa-hero__callout radius-lg border-2px border-primary contact-card">
-          <div style="display:inline-block;background-color:#e52207;color:#fff;font-weight:bold;font-size:.75rem;padding:.25rem .5rem;border-radius:.25rem;">
-            CONTACT
-          </div>
-          <h1 class="usa-hero__heading h2color text-normal font-body-l" style="margin-top:1rem;">Contact DAPEN</h1>
-          <p class="text-black">Questions about the DAPEN® Defense Fund or accessibility help? Use the form below and our team will get back to you.</p>
+        <h1 class="font-body-2xl">Contact DAPEN</h1>
+        <p class="text-black">Use the form below to get in touch with our team.</p>
 
-          <div class="form-wrapper">
-            <iframe
-              class="form-embed"
-              title="Contact DAPEN form"
-              src="https://docs.google.com/forms/d/e/1FAIpQLSeeLj0J6MgJ5mtHrNqEFu6EpUW6sZl5tiecB74_mL6XFRw4NQ/viewform?embedded=true"
-              marginheight="0"
-              marginwidth="0"
-              loading="lazy"
-            >
+        <div class="form-wrapper">
+          <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeeLj0J6MgJ5mtHrNqEFu6EpUW6sZl5tiecB74_mL6XFRw4NQ/viewform?embedded=true" 
+            width="960" 
+            height="1300" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0">
             Loading…
-            </iframe>
-          </div>
-
-          <p class="text-black" style="margin-top:1rem;">
-            If the form doesn’t load, <a href="https://forms.gle/jiPsWHzQZEV4eQcN6" rel="noopener">click here to open it directly</a>.
-          </p>
+          </iframe>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <div class="usa-identifier">
+ <div class="usa-identifier">
     <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Site identifier">
       <div class="usa-identifier__container">
         <div class="usa-identifier__logos">
-          <a href="https://dapen.org/" class="usa-identifier__logo">
+          <a href="https://dapen.org/" class="usa-identifier__logo" onclick="return navigate(this)">
             <img class="usa-identifier__logo-img" alt="DAPEN Logo" src="/assets/images/dapen-footer.jpg" />
           </a>
         </div>
@@ -159,37 +127,79 @@
           <p class="usa-identifier__identity-domain">DAPEN.org</p>
           <p class="usa-identifier__identity-disclaimer">
             A website by the
-            <a href="/about-us/">Digital Accessibility Protection &amp; Education Network</a>
+            <a href="/about-us/" onclick="return navigate(this)">Digital Accessibility Protection &amp; Education Network</a>
           </p>
         </div>
       </div>
     </section>
 
-    <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
-      <div class="usa-identifier__container">
-        <ul class="usa-identifier__required-links-list">
-          <li class="usa-identifier__required-links-item"><a href="/protect/" class="usa-identifier__required-link usa-link">Get Protected</a></li>
-          <li class="usa-identifier__required-links-item"><a href="/about-us/" class="usa-identifier__required-link usa-link">About DAPEN</a></li>
-          <li class="usa-identifier__required-links-item"><a href="/contact/" class="usa-identifier__required-link usa-link" aria-current="page">Contact Us</a></li>
-          <li class="usa-identifier__required-links-item"><a href="/legal-policies/accessibility-statement/" class="usa-identifier__required-link usa-link">Accessibility Statement</a></li>
-          <li class="usa-identifier__required-links-item"><a href="/legal-policies/terms-of-service/" class="usa-identifier__required-link usa-link">Terms of Service</a></li>
-          <li class="usa-identifier__required-links-item"><a href="/legal-policies/privacy-policy/" class="usa-identifier__required-link usa-link">Privacy Policy</a></li>
-        </ul>
-      </div>
-    </nav>
+<nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+  <div class="usa-identifier__container">
+    <ul class="usa-identifier__required-links-list">
+      <li class="usa-identifier__required-links-item">
+        <a href="/protect/" class="usa-identifier__required-link usa-link" onclick="return navigate(this)">Get Protected</a>
+      </li>
+      <li class="usa-identifier__required-links-item">
+        <a href="/about-us/" class="usa-identifier__required-link usa-link" onclick="return navigate(this)">About DAPEN</a>
+      </li>
+      <li class="usa-identifier__required-links-item">
+        <a href="/contact/" class="usa-identifier__required-link usa-link" onclick="return navigate(this)">Contact Us</a>
+      </li>
+      <li class="usa-identifier__required-links-item">
+        <a href="/legal-policies/accessibility-statement/" class="usa-identifier__required-link usa-link" onclick="return navigate(this)">Accessibility Statement</a>
+      </li>
+      <li class="usa-identifier__required-links-item">
+        <a href="/legal-policies/terms-of-service/" class="usa-identifier__required-link usa-link" onclick="return navigate(this)">Terms of Service</a>
+      </li>
+      <li class="usa-identifier__required-links-item">
+        <a href="/legal-policies/privacy-policy/" class="usa-identifier__required-link usa-link" onclick="return navigate(this)">Privacy Policy</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  .usa-identifier__required-links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: 1024px) {
+    .usa-identifier__required-links-list {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(2, auto);
+      gap: 0.75rem 2rem; /* row gap / column gap */
+    }
+
+    .usa-identifier__required-links-list li:nth-child(1) { grid-column: 1; grid-row: 1; }
+    .usa-identifier__required-links-list li:nth-child(2) { grid-column: 2; grid-row: 1; }
+    .usa-identifier__required-links-list li:nth-child(3) { grid-column: 3; grid-row: 1; }
+
+    .usa-identifier__required-links-list li:nth-child(4) { grid-column: 1; grid-row: 2; }
+    .usa-identifier__required-links-list li:nth-child(5) { grid-column: 2; grid-row: 2; }
+    .usa-identifier__required-links-list li:nth-child(6) { grid-column: 3; grid-row: 2; }
+  }
+</style>
 
     <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="Additional information">
       <div class="usa-identifier__container">
         <div class="usa-identifier__usagov-description">
           Over 250,000 small businesses face ADA demand letters every year.
         </div>
-        <a href="/protect/" class="usa-link">Register with the DAPEN® Defense Fund</a>
+        <a href="/protect/" class="usa-link" onclick="return navigate(this)">Register with the DAPEN® Defense Fund</a>
       </div>
     </section>
   </div>
 
-  <!-- Scripts -->
   <script src="/assets/js/uswds.min6737.js?1753365385119170858"></script>
   <script src="/assets/js/app6737.js?1753365385119170858"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
